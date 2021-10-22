@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/Vapor.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>SC Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sebastian Cyde</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="AboutMeNav" href="#">About Me
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h1>About Me</h1>
+    <div class="card border-primary mb-3">
+
+        <div class="card-body">
+
+            <p class="card-text">My name is Sebastian and I'm passionate about all things JavaScript. I'm a hard working
+                individual who cares about writing clean, effective code. I'm a self taught junior developer
+                which proves my dedication and how much I love to learn new things. I'm currently
+                looking for the right opportunity to work in an environment that will help me progress into
+                a full stack role.</p>
+        </div>
+    </div>
+
+    <h1>Projects</h1>
+
+    <div class="card border-primary mb-3">
+        <h3 class="card-header">1. PokeDex</h3>
+        <div class="card-body">
+
+            <h6 class="card-subtitle text-muted">A dynamic index of Pokemon</h6>
+        </div>
+        <img src="assets/VanillaPokeDex1.jpg" alt="">
+        <div class="card-body">
+            <img src="assets/VanillaPokeDex1Mobile1.jpg" alt="" id="MobilePokedexImg">
+            <p class="card-text">A full PokeDex with responsive functionality. Gathers data from API and dynamically
+                creates 'cards' that display the returned information. Mobile view only shows PokeDex entries,
+                desktop view takes the name of whichever pokemon is clicked by the user and searches another API
+                specifically for details about that Pokemon, then displays the extra detail in the section on the right.
+            </p>
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <h2 class="languagesUsed">Languages Used</h2>
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">SCSS</li>
+            <li class="list-group-item">JavaScript</li>
+        </ul>
+        <div class="card-body">
+            <a href="https://github.com/sebcyde/Pokedex-V1" target="_blank" class="card-link">View Code</a>
+            <a href="https://sebcyde.github.io/Pokedex-V1/" target="_blank" class="card-link">Live Site</a>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
