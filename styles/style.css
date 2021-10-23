@@ -230,6 +230,7 @@ html body nav {
     overflow-y: scroll;
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 2em;
   }
   body nav {
     width: 100%;
