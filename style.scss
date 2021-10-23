@@ -96,6 +96,9 @@ html {
 			height: auto;
 			margin-left: auto;
 			margin-right: auto;
+			border-radius: 5px;
+			border: 1px solid $cyan;
+			box-shadow: 0px 0px 7px $cyan;
 		}
 		.card-body {
 			display: flex;
@@ -104,6 +107,9 @@ html {
 			align-items: center;
 			#MobilePokedexImg {
 				height: 19em !important;
+				border-radius: 5px;
+				border: 1px solid $cyan;
+				box-shadow: 0px 0px 7px $cyan;
 			}
 
 			p {
@@ -133,6 +139,9 @@ html {
 				img {
 					width: 49%;
 					height: auto;
+					border-radius: 5px;
+					border: 1px solid $orange;
+					box-shadow: 0px 0px 7px $orange;
 				}
 			}
 			.CDSpan1 {
