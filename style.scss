@@ -1,5 +1,5 @@
 @import 'VaporVariables.scss';
-
+@import 'styles/ModalImages.scss';
 html {
 	width: 100%;
 	height: 100%;
@@ -9,6 +9,7 @@ html {
 		margin: 0px;
 		padding: 0px;
 		overflow-x: scroll;
+		font-family: 'Zen Kurenaido', sans-serif;
 		nav {
 			width: 100%;
 		}
@@ -23,8 +24,19 @@ html {
 		padding: 0px;
 		overflow-x: hidden;
 		overflow-y: scroll;
+		background-size: cover;
+		background-attachment: fixed;
 		nav {
 			width: 100%;
+		}
+
+		#AboutMeImage {
+			width: 70%;
+			height: auto;
+			margin-bottom: 1em;
+			border-radius: 5px;
+			border: 1px solid $pink;
+			box-shadow: 0px 0px 7px $pink;
 		}
 	}
 	.card {
@@ -40,6 +52,34 @@ html {
 			color: $light;
 			text-align: center;
 		}
+
+		.icons {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			margin-bottom: 1em;
+			img {
+				height: 3em;
+				width: auto;
+			}
+			.html {
+				filter: invert(58%) sepia(96%) saturate(881%) hue-rotate(359deg)
+					brightness(101%) contrast(105%);
+			}
+			.css {
+				filter: invert(68%) sepia(77%) saturate(436%) hue-rotate(151deg)
+					brightness(94%) contrast(89%);
+			}
+			.sass {
+				filter: invert(16%) sepia(98%) saturate(2695%) hue-rotate(294deg)
+					brightness(100%) contrast(101%);
+			}
+			.js {
+				filter: invert(74%) sepia(78%) saturate(1582%) hue-rotate(350deg)
+					brightness(101%) contrast(106%);
+			}
+		}
 	}
 	h1 {
 		margin-top: 1em;
@@ -50,6 +90,47 @@ html {
 	.card:nth-of-type(2) {
 		box-shadow: 0 0 2px rgb(111 66 193 / 90%), 0 0 4px rgb(111 66 193 / 40%),
 			0 0 1rem rgb(111 66 193 / 30%), 0 0 4rem rgb(111 66 193 / 10%);
+
+		.card-body {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			#MobilePokedexImg {
+				height: 19em !important;
+			}
+			p {
+				width: 50%;
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	.card:nth-of-type(3) {
+		box-shadow: 0 0 2px rgb(111 66 193 / 90%), 0 0 4px rgb(111 66 193 / 40%),
+			0 0 1rem rgb(111 66 193 / 30%), 0 0 4rem rgb(111 66 193 / 10%);
+
+		> img {
+			margin-bottom: 1em;
+		}
+
+		.ProjectCard2ImageContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			span {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				img {
+					width: 49%;
+				}
+			}
+			.CDSpan1 {
+				margin-bottom: 1em;
+			}
+		}
 
 		.card-body:nth-of-type(2) {
 			display: flex;

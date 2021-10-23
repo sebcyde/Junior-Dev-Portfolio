@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/Vapor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Simonetta&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>SC Portfolio</title>
 </head>
@@ -46,6 +49,8 @@
 
         <div class="card-body">
 
+            <img src="assets/AboutMeImage.jpg" alt="" id="AboutMeImage">
+
             <p class="card-text">My name is Sebastian and I'm passionate about all things JavaScript. I'm a hard working
                 individual who cares about writing clean, effective code. I'm a self taught junior developer
                 which proves my dedication and how much I love to learn new things. I'm currently
@@ -54,7 +59,9 @@
         </div>
     </div>
 
+
     <h1>Projects</h1>
+
 
     <div class="card border-primary mb-3">
         <h3 class="card-header">1. PokeDex</h3>
@@ -62,22 +69,51 @@
 
             <h6 class="card-subtitle text-muted">A dynamic index of Pokemon</h6>
         </div>
-        <img src="assets/VanillaPokeDex1.jpg" alt="">
+        <div id="PokeDexModal1" class="modalPD1">
+
+            <!-- The Close Button -->
+            <span class="ClosePDMI1">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-contentPD1" id="PDMI1">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="PDMI1C"></div>
+        </div>
+        <img src="assets/VanillaPokeDex1.jpg" alt="PokeDex Desktop View" id="PD1">
+        <div id="PokeDexModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="PDMI1">
+            <div id="PDMI1C"></div>
+        </div>
         <div class="card-body">
+            <div id="PokeDexModal2" class="modalPD2">
+
+                <!-- The Close Button -->
+                <span class="ClosePDMI2">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-contentPD2" id="PDMI2">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="PDMI2C"></div>
+            </div>
             <img src="assets/VanillaPokeDex1Mobile1.jpg" alt="" id="MobilePokedexImg">
             <p class="card-text">A full PokeDex with responsive functionality. Gathers data from API and dynamically
                 creates 'cards' that display the returned information. Mobile view only shows PokeDex entries,
-                desktop view takes the name of whichever pokemon is clicked by the user and searches another API
+                desktop view takes whichever pokemon is selected and searches another API
                 specifically for details about that Pokemon, then displays the extra detail in the section on the right.
             </p>
         </div>
 
         <ul class="list-group list-group-flush">
             <h2 class="languagesUsed">Languages Used</h2>
-            <li class="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">SCSS</li>
-            <li class="list-group-item">JavaScript</li>
+            <span class="icons">
+                <img src="assets/html5.svg" alt="" class="html">
+                <img src="assets/css3.svg" alt="" class="css">
+                <img src="assets/sass.svg" alt="" class="sass">
+                <img src="assets/js.svg" alt="" class="js">
+            </span>
         </ul>
         <div class="card-body">
             <a href="https://github.com/sebcyde/Pokedex-V1" target="_blank" class="card-link">View Code</a>
@@ -87,12 +123,117 @@
     </div>
 
 
+    <div class="card border-primary mb-3">
+        <h3 class="card-header">2. CryptoDex</h3>
+        <div class="card-body">
 
+            <h6 class="card-subtitle text-muted">A hub of crypto related information</h6>
+        </div>
+        <div class="ProjectCard2ImageContainer">
+            <span class="CDSpan CDSpan1">
+                <!-- The Modal -->
+                <div id="PokeDexModal2" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="ClosePDMI2">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="PDMI2">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="PDMI2C"></div>
+                </div>
+                <img src="assets/CryptoDex1.jpg" alt="">
+                <!-- The Modal -->
+                <div id="PokeDexModal2" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="ClosePDMI2">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="PDMI2">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="PDMI2C"></div>
+                </div>
+                <img src="assets/CryptoDex2.jpg" alt="">
+            </span>
+
+            <span class="CDSpan">
+                <!-- The Modal -->
+                <div id="PokeDexModal2" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="ClosePDMI2">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="PDMI2">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="PDMI2C"></div>
+                </div>
+                <img src="assets/CryptoDex1Light.jpg" alt="">
+                <!-- The Modal -->
+                <div id="PokeDexModal2" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="ClosePDMI2">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="PDMI2">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="PDMI2C"></div>
+                </div>
+                <img src="assets/CryptoDex2Light.jpg" alt="">
+            </span>
+        </div>
+
+
+        <div class="card-body">
+
+            <p class="card-text">A fun crypto Index that uses APIs to return various data for different crypto coins.
+                Has functionality
+                to search for specific coins, as well as a trending tickers tab that shows the top 7 currently most
+                trending coins with information about each one.
+            </p>
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <h2 class="languagesUsed">Languages Used</h2>
+            <span class="icons">
+                <img src="assets/html5.svg" alt="" class="html">
+                <img src="assets/css3.svg" alt="" class="css">
+                <img src="assets/sass.svg" alt="" class="sass">
+                <img src="assets/js.svg" alt="" class="js">
+
+            </span>
+        </ul>
+        <div class="card-body">
+            <a href="https://github.com/sebcyde/Pokedex-V1" target="_blank" class="card-link">View Code</a>
+            <a href="https://sebcyde.github.io/Pokedex-V1/" target="_blank" class="card-link">Live Site</a>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/VanillaPokeDex1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
 
 </body>
 
