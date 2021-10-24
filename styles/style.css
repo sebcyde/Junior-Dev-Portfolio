@@ -237,6 +237,7 @@ html body nav {
   }
   body #AboutMeImage {
     width: 70%;
+    max-width: 300px;
     height: auto;
     margin-bottom: 1em;
     border-radius: 5px;
@@ -245,6 +246,8 @@ html body nav {
   }
 
   .card {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 0.5em;
     width: 95%;
     margin-left: auto;
@@ -302,10 +305,16 @@ html body nav {
     box-shadow: 0px 0px 7px #32fbe2;
   }
   .card:nth-of-type(2) .card-body {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
   }
   .card:nth-of-type(2) .card-body #MobilePokedexImg {
     height: 19em !important;
@@ -313,9 +322,26 @@ html body nav {
     border: 1px solid #32fbe2;
     box-shadow: 0px 0px 7px #32fbe2;
   }
+  .card:nth-of-type(2) .card-body h6 {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .card:nth-of-type(2) .card-body p {
     width: 50%;
     flex-wrap: wrap;
+  }
+  .card:nth-of-type(2) .m2 {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 
   .card:nth-of-type(3) {
@@ -346,10 +372,16 @@ html body nav {
     margin-bottom: 1em;
   }
   .card:nth-of-type(3) .card-body:nth-of-type(2) {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
   }
   .card:nth-of-type(3) .card-body:nth-of-type(2) #MobilePokedexImg {
     height: 19em;
@@ -360,7 +392,17 @@ html body nav {
   }
 
   .languagesUsed {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-top: 0.5em;
+  }
+
+  .calccont > img {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid #1ba2f6;
+    box-shadow: 0px 0px 7px #1ba2f6;
   }
 }/*# sourceMappingURL=style.css.map */

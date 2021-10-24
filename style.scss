@@ -33,7 +33,9 @@ html {
 
 		#AboutMeImage {
 			width: 70%;
+			max-width: 300px;
 			height: auto;
+
 			margin-bottom: 1em;
 			border-radius: 5px;
 			border: 2px solid $pink;
@@ -41,6 +43,8 @@ html {
 		}
 	}
 	.card {
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
 		padding: 0.5em;
 		width: 95%;
 		margin-left: auto;
@@ -100,11 +104,19 @@ html {
 			border: 1px solid $cyan;
 			box-shadow: 0px 0px 7px $cyan;
 		}
+
 		.card-body {
+			width: 100%;
+			max-width: 500px;
+			margin-top: 1em;
+			margin-left: auto;
+			margin-right: auto;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: center;
+			text-align: center;
+
 			#MobilePokedexImg {
 				height: 19em !important;
 				border-radius: 5px;
@@ -112,10 +124,29 @@ html {
 				box-shadow: 0px 0px 7px $cyan;
 			}
 
+			h6 {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
 			p {
 				width: 50%;
 				flex-wrap: wrap;
 			}
+		}
+
+		.m2 {
+			width: 100%;
+			max-width: 500px;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
 		}
 	}
 
@@ -150,10 +181,16 @@ html {
 		}
 
 		.card-body:nth-of-type(2) {
+			width: 100%;
+			max-width: 500px;
+			margin-top: 1em;
+			margin-left: auto;
+			margin-right: auto;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: center;
+			text-align: center;
 			#MobilePokedexImg {
 				height: 19em;
 			}
@@ -165,7 +202,19 @@ html {
 	}
 
 	.languagesUsed {
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		margin-top: 0.5em;
+	}
+
+	.calccont {
+		> img {
+			width: 95%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 5px;
+			border: 1px solid $blue;
+			box-shadow: 0px 0px 7px $blue;
+		}
 	}
 }
