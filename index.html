@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sebastian Cyde</a>
+            <a class="navbar-brand" href="">Sebastian Cyde</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,15 +27,15 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" id="AboutMeNav" href="#">About Me
+                        <a class="nav-link active" id="AboutMeNav" href="#ab">About Me
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#PJ">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#CT">Contact</a>
                     </li>
 
 
@@ -44,7 +44,7 @@
             </div>
         </div>
     </nav>
-    <h1>About Me</h1>
+    <h1 id="ab">About Me</h1>
     <div class="card border-primary mb-3">
 
         <div class="card-body">
@@ -60,7 +60,7 @@
     </div>
 
 
-    <h1>Projects</h1>
+    <h1 id="PJ">Projects</h1>
 
 
     <div class="card border-primary mb-3">
@@ -95,7 +95,7 @@
                 <img src="assets/js.svg" alt="" class="js">
             </span>
         </ul>
-        <div class="card-body">
+        <div class="card-body links">
             <a href="https://github.com/sebcyde/Pokedex-V1" target="_blank" class="card-link">View Code</a>
             <a href="https://sebcyde.github.io/Pokedex-V1/" target="_blank" class="card-link">Live Site</a>
         </div>
@@ -146,7 +146,7 @@
 
             </span>
         </ul>
-        <div class="card-body">
+        <div class="card-body links">
             <a href="https://github.com/sebcyde/CryptoDex" target="_blank" class="card-link">View Code</a>
             <a href="https://sebcyde.github.io/CryptoDex/" target="_blank" class="card-link">Live Site</a>
         </div>
@@ -179,17 +179,41 @@
                 <img src="assets/js.svg" alt="" class="js">
             </span>
         </ul>
-        <div class="card-body">
+        <div class="card-body links">
             <a href="https://github.com/sebcyde/zooSimulator" target="_blank" class="card-link">View Code</a>
             <a href="https://sebcyde.github.io/zooSimulator/" target="_blank" class="card-link">Live Site</a>
         </div>
 
     </div>
 
+    <h1>
+        Contact Me
+    </h1>
+
+    <div class="card border-info mb-3 networkcontainer" style="max-width: 20rem;" id="CT">
+
+        <div class="card-body network">
+            <p class="text-secondary">Mobile: 07956323507</p>
+            <p class="text-warning">Email: sebcyde@hotmail.com</p>
+            <a href="https://github.com/sebcyde" target="_blank" class="text-danger"
+                rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/saintsebby/" target="_blank" class="text-success"
+                rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/sebastian-cyde-48501013a/" target="_blank" rel="noopener noreferrer"
+                class="text-info">LinkdIn</a>
+
+        </div>
+    </div>
+    <div id="BT"><button type="button" class="btn btn-info BTT" id="BTT">Back to Top</button></div>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="app.js" type="module"></script>
+    <script src="app.js"></script>
 
 </body>
 
