@@ -1,22 +1,302 @@
 @import 'VaporVariables.scss';
 
 html {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	scroll-behavior: smooth;
 	body {
 		height: 100%;
 		width: 100%;
+		max-width: 1440px !important;
 		margin: 0px;
+		margin-left: auto !important;
+		margin-right: auto !important;
 		padding: 0px;
-		overflow-x: scroll;
+		overflow-x: hidden;
+		overflow-y: scroll;
 		font-family: 'Zen Kurenaido', sans-serif;
-		nav {
-			width: 100%;
+
+		.btn-secondary:nth-of-type(2) {
+			margin-top: 2em !important;
 		}
 	}
 }
 
+@media screen and (min-width: 769px) {
+	body {
+		.card.border-primary {
+			box-shadow: 0 0 4px rgb(111 66 193 / 90%), 0 0 8px rgb(111 66 193 / 40%),
+				0 0 2rem rgb(111 66 193 / 30%), 0 0 8rem rgb(111 66 193 / 10%);
+		}
+		text-align: center;
+		max-width: 1440px !important;
+		margin: 0px;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding: 0px;
+		overflow-x: scroll;
+		font-family: 'Zen Kurenaido', sans-serif;
+		background-size: cover;
+		background-attachment: fixed;
+		padding-bottom: 2em;
+
+		h1 {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		nav {
+			width: 100%;
+			position: sticky;
+			top: 1px;
+
+			li:hover {
+				color: $cyan;
+			}
+		}
+		#BT {
+			text-align: center;
+		}
+		#BTT {
+			width: 7em;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			margin-bottom: 2em;
+			cursor: pointer;
+		}
+
+		#AboutMeImage {
+			width: 70%;
+			max-width: 270px;
+			height: auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			border-radius: 5px;
+			border: 2px solid $red;
+			box-shadow: 0px 0px 12px $red;
+		}
+
+		p {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+			margin-bottom: 1em !important;
+			font-size: 20px;
+		}
+
+		a.cv > button {
+			margin-top: 1em;
+		}
+
+		h3 {
+			font-size: 1.7em;
+		}
+		h6 {
+			font-size: 1.4em;
+
+			margin-bottom: 0.7em !important;
+		}
+		h2 {
+			font-size: 2em;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		.card-link {
+			font-size: 1.4em;
+		}
+
+		.card {
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			padding: 0.5em;
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			text-align: center;
+		}
+
+		.icons {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			margin-bottom: 1em;
+
+			img {
+				height: 4em;
+				width: auto;
+			}
+			.html {
+				filter: invert(58%) sepia(96%) saturate(881%) hue-rotate(359deg)
+					brightness(101%) contrast(105%);
+			}
+			.css {
+				filter: invert(68%) sepia(77%) saturate(436%) hue-rotate(151deg)
+					brightness(94%) contrast(89%);
+			}
+			.sass {
+				filter: invert(16%) sepia(98%) saturate(2695%) hue-rotate(294deg)
+					brightness(100%) contrast(101%);
+			}
+			.js {
+				filter: invert(74%) sepia(78%) saturate(1582%) hue-rotate(350deg)
+					brightness(101%) contrast(106%);
+			}
+		}
+
+		.card:nth-of-type(2) {
+			box-shadow: 0 0 4px rgb(111 66 193 / 90%), 0 0 8px rgb(111 66 193 / 40%),
+				0 0 2rem rgb(111 66 193 / 30%), 0 0 8rem rgb(111 66 193 / 10%);
+			#PD1 {
+				width: 70%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 5px;
+				border: 1px solid $cyan;
+				box-shadow: 0px 0px 12px $cyan;
+			}
+
+			.card-body {
+				width: 100%;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly !important;
+				align-items: center;
+				text-align: center;
+
+				#MobilePokedexImg {
+					height: 26em !important;
+					border-radius: 5px;
+					border: 1px solid $cyan;
+					box-shadow: 0px 0px 12px $cyan;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				h6 {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				p {
+					width: 50%;
+					flex-wrap: wrap;
+				}
+				.links {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					font-size: 1.3em;
+				}
+			}
+			.m2 {
+				width: 80% !important;
+			}
+		}
+
+		.card:nth-of-type(3) {
+			box-shadow: 0 0 2px rgb(111 66 193 / 90%), 0 0 4px rgb(111 66 193 / 40%),
+				0 0 1rem rgb(111 66 193 / 30%), 0 0 4rem rgb(111 66 193 / 10%);
+
+			> img {
+				margin-bottom: 1em;
+			}
+
+			.ProjectCard2ImageContainer {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				span {
+					width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					img {
+						width: 49%;
+						height: auto;
+						border-radius: 5px;
+						border: 1px solid $orange;
+						box-shadow: 0px 0px 12px $orange;
+					}
+				}
+				.CDSpan1 {
+					margin-bottom: 1em;
+				}
+			}
+
+			.card-body:nth-of-type(2) {
+				width: 100%;
+				max-width: 500px;
+				margin-top: 1em;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				text-align: center;
+				#MobilePokedexImg {
+					height: 19em;
+				}
+				p {
+					width: 50%;
+					flex-wrap: wrap;
+				}
+			}
+			.links {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				font-size: 1.3em;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+		}
+
+		.links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			font-size: 1.3em;
+		}
+
+		.networkcontainer {
+			margin-bottom: 2em !important;
+			font-size: 1.4em;
+		}
+		.calccont {
+			> img {
+				width: 60%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 5px;
+				border: 1px solid $yellow;
+				box-shadow: 0px 0px 12px $yellow;
+			}
+		}
+		.networkcontainer {
+			width: 60%;
+			margin-bottom: 2em !important;
+			font-size: 2em;
+			p {
+				font-size: 1em;
+				width: 100%;
+			}
+		}
+	}
+}
 @media screen and (max-width: 768px) {
 	body {
 		height: 100%;
@@ -44,13 +324,17 @@ html {
 
 		#AboutMeImage {
 			width: 70%;
-			max-width: 300px;
+			max-width: 270px;
 			height: auto;
 
 			margin-bottom: 1em;
 			border-radius: 5px;
-			border: 2px solid $pink;
-			box-shadow: 0px 0px 7px $pink;
+			border: 2px solid $red;
+			box-shadow: 0px 0px 7px $red;
+		}
+
+		a.cv > button {
+			margin-top: 1em;
 		}
 	}
 	.card {
@@ -119,7 +403,7 @@ html {
 		.card-body {
 			width: 100%;
 			max-width: 500px;
-			margin-top: 1em;
+
 			margin-left: auto;
 			margin-right: auto;
 			display: flex;
@@ -236,7 +520,28 @@ html {
 	}
 
 	.networkcontainer {
+		width: 80%;
 		margin-bottom: 2em !important;
 		font-size: 1.4em;
 	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $teal;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $cyan;
 }
